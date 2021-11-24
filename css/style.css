@@ -12,18 +12,18 @@
 header {
     height: 100px;
     background-color: white;
+    
 }
 
 .row{
-    margin: 1%; 
+    margin: 1% ; 
     display: flex;
-    flex-direction: row;
+
     justify-content: space-between;
     align-content: center;
 }
 
 .col-left {
-
     display: flex;
     justify-content: start;
     align-items: center;
@@ -31,8 +31,7 @@ header {
 
 
 .logo-img  {
-    width: 75px;
-    
+    width: 75px;  
 }
 
 .logo-img img {
@@ -44,10 +43,49 @@ header {
     justify-content: end;
     align-items: center;
 }
+
 main {
     height: calc(100% - 175px);
     background-color: #7fffd4;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.grid-game {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    border: 2px solid black;
+    color: black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* test */
+    /* width: calc(100% / 10);
+    height: calc(100% / 10);     */
+}
+
+.square.active {
+    background-color: #6495ed;
+}
+
+.square.active span {
+    display: block;
+    
+}
+
+
 
 footer {
     height: 75px;
@@ -56,6 +94,7 @@ footer {
     display: fixed;
     bottom: 0;
     background-color: white;
+    
     display: flex;
     align-items: center;
 }
